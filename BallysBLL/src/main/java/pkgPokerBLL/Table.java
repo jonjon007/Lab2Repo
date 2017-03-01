@@ -13,9 +13,15 @@ public class Table {
 		TableID = UUID.randomUUID();
 	}
 	
+	public void addToTablePlayers(Player plyrs){
+		TablePlayers.add(plyrs);
+	}
+	
 	public Table AddPlayerToTable(Player p)
 	{
-		//TODO: Add a player to the table (should be pretty easy)		
-		return this;
+		//TODO: Add a player to the table (should be pretty easy)
+		Table tempTable = this;
+		tempTable.addToTablePlayers(p);
+		return tempTable;
 	}
 }

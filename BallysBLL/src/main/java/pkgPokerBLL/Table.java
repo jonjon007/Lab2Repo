@@ -12,16 +12,10 @@ public class Table {
 		super();
 		TableID = UUID.randomUUID();
 	}
-	
-	public void addToTablePlayers(Player plyrs){
-		TablePlayers.add(plyrs);
-	}
-	
-	public Table AddPlayerToTable(Player p)
+
+	public void AddPlayerToTable(Player p)
 	{
 		//TODO: Add a player to the table (should be pretty easy)
-		Table tempTable = this;
-		tempTable.addToTablePlayers(p);
-		return tempTable;
+		TablePlayers.add(p);
 	}
 }

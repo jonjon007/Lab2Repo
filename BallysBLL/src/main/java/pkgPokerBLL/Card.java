@@ -1,16 +1,19 @@
 package pkgPokerBLL;
+import pkgPokerEnum.eRank;
+//import pkgPokerEnum.eSuit;
 
 import java.util.Comparator;
 
 import pkgPokerEnum.*;
+import pkgPokerEnum.eRank;
 
 public class Card implements Comparable {
 
 	private eRank eRank;
 	private eSuit eSuit;
 	
-	public Card(eRank eRank, eSuit eSuit) {
-		this.eRank = eRank;
+	public Card(eRank rank, eSuit eSuit) {
+		this.eRank = rank;
 		this.eSuit = eSuit;
 	}
 
